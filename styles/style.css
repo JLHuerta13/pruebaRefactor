@@ -30,12 +30,20 @@ nav a:hover {
 main {
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 140px); /* Adjust for header and footer */
 }
 
 form {
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
     text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 form label {
@@ -60,10 +68,17 @@ form button {
     cursor: pointer;
     border-radius: 5px;
     width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
     background-color: #0056b3;
+}
+
+#loading {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
 }
 
 footer {
@@ -74,4 +89,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 14px;
 }
